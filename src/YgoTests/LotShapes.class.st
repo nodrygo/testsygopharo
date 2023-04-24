@@ -70,6 +70,7 @@ usebloc ifTrue: [ c useBlocHost] .
 
   ^ c 
 "
+open auto ou pas ? 
 win := c openOnce .
 win extent: 800@600.
 "
