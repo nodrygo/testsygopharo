@@ -5,8 +5,8 @@
   
    
 ```
-Metacello new baseline: 'MyCoolProjectWithPharo';
-     repository: 'github://nodrygo/MYgoTests/src'; load
+Metacello new baseline: 'YgopTests';
+     repository: 'github://nodrygo/testsygopharo/src'; load
 ```
 
 "
