@@ -4,7 +4,16 @@
 needs:
 -    Bloc  
 -    github://ObjectProfile/Roassal3:bloc
-```    
+```  
+[ Metacello new
+	baseline: 'Bloc';
+	repository: 'github://pharo-graphics/Bloc:dev-1.0/src';
+	onConflictUseIncoming;
+	ignoreImage;
+	load ]
+		on: MCMergeOrLoadWarning
+		do: [ :warning | warning load ]
+		  
 [Metacello new
     baseline: 'Roassal3:bloc';
     repository: 'github://ObjectProfile/Roassal3:bloc';
