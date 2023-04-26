@@ -20,7 +20,7 @@ Class {
 		'nb',
 		'usebloc'
 	],
-	#category : #YgoTests
+	#category : #'YgoTests-ShapesRoassalTests'
 }
 
 { #category : #initialization }

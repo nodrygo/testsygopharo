@@ -18,7 +18,7 @@ Metacello new baseline: 'YgoTests';
 Class {
 	#name : #BaselineOfYgoTests,
 	#superclass : #BaselineOf,
-	#category : #YgoTests
+	#category : #'YgoTests-ShapesRoassalTests'
 }
 
 { #category : #baselines }
