@@ -1,12 +1,17 @@
 "
 ###  BaselineOf YgoTests   
+
+needs:
+-    Bloc  
+-    github://ObjectProfile/Roassal3:bloc
     
 ### How to load in Playground
   
    
 ```
-Metacello new baseline: 'YgopTests';
-     repository: 'github://nodrygo/testsygopharo/src'; load
+Metacello new baseline: 'YgoTests';
+     repository: 'github:nodrygo/testsygopharo/src/YgoTests'; load
+
 ```
 
 "
