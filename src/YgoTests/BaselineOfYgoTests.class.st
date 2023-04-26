@@ -4,7 +4,12 @@
 needs:
 -    Bloc  
 -    github://ObjectProfile/Roassal3:bloc
-    
+```    
+[Metacello new
+    baseline: 'Roassal3:bloc';
+    repository: 'github://ObjectProfile/Roassal3:bloc';
+    load: 'Full' ] on: MCMergeOrLoadWarning do: [:warning | warning load ]
+```    
 ### How to load in Playground
   
    
@@ -24,7 +29,11 @@ Class {
 { #category : #baselines }
 BaselineOfYgoTests >> baseline: spec [ 
 	<baseline>
- spec
-    for: #common 
-    do: [ spec package: 'YgoTest' ]
+ spec     for: #common  do: [
+	   spec package: 'YgoTest' .
+      spec 
+		     baseline: 'Roassal3'
+		     with: [ 
+		        spec repository: 'github://ObjectProfile/Roassal3:bloc/src' ].
+	]
 ]
